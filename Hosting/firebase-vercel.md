@@ -9,6 +9,7 @@ firebase login (y)
 ```
 ## if need to reauth
 ```
+firebase login:list
 firebase login --reauth
 ```
 
@@ -30,7 +31,14 @@ firebase login --reauth
     npm run build
     firebase deploy
 ```
-
+## Netlify
+```
+    - In public> create 
+    _redirects
+    - and write 
+    /* /index.html 200
+    - go to firebase > setting > Auth Domain
+```
 
 # `Vercel Host`
 ### You have to check first
