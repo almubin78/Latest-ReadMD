@@ -41,6 +41,7 @@ firebase login --reauth
 ```
 
 # `Vercel Host`
+* for full doc [dev-community](https://dev.to/shafia/some-common-vercel-errors-548i?fbclid=IwAR1pKP78FHbAIGuqgg-DGiQBbQQf68fHiwYivx0FlgA-bXpwNlc2S5YGvTI)
 ### You have to check first
 * `in pakage.json` "scripts": {"build": "index.js"},
 * have you `.env` file? It should be create when connect mongodb
@@ -62,6 +63,20 @@ firebase login --reauth
     ]
 }
 ```
+* Another way
+```
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ]
+}
+```
+* the top code from [github](https://github.com/JaberChowdhury/ColorCodeGenerator/blob/main/vercel.json?fbclid=IwAR3443FmqwI8IEbRSvdntUVk-DPCnE0Wt7F_uOc9mx6l4X0Omqx2qmxOr7U)
+
+
 * write `.vercel` in `.gitignore`
 ## go to `cmd`
 * command `vercel`,  if first time [`npm i -g vercel`]
