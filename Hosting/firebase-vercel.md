@@ -42,6 +42,7 @@ firebase login --reauth
 
 # `Vercel Host`
 * for full doc [dev-community](https://dev.to/shafia/some-common-vercel-errors-548i?fbclid=IwAR1pKP78FHbAIGuqgg-DGiQBbQQf68fHiwYivx0FlgA-bXpwNlc2S5YGvTI)
+* this is solve my problem fix in vercel [sofia](https://dev.to/shafia/the-errors-you-may-face-for-not-whitelisting-the-ip-address-0000-in-your-mongodb-network-access-32f8)
 ### You have to check first
 * `in pakage.json` "scripts": {"build": "index.js"},
 * have you `.env` file? It should be create when connect mongodb
